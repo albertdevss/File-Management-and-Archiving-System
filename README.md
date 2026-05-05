@@ -11,7 +11,7 @@ A professional web-based application designed to manage, track, and organize inv
 
 ## Installation
 1. Get the Project
-   Clone: use git clone https://github.com/albertdevss/file_inventory_system.git
+   Clone: use git clone https://github.com/albertdevss/File-Management-and-Archiving-System.git
 2. Create a Virtual Environment
    Open your terminal (CMD for Windows, or Terminal for Linux) and navigate inside the file_inventory_system folder. Run the following command:
 
