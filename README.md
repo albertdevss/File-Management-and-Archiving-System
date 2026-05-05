@@ -36,12 +36,18 @@ A professional web-based application designed to manage, track, and organize inv
 4. Install Requirements
 
       pip install -r requirements.txt
+
+5. Create an admin account
    
-5. Run the System
+   inside of venv type to create an admin account:
+
+   python manage.py createsuperuser
+   
+7. Run the System
      Launch the backend server with this command:
 
    python manage.py runserver
-6. Access the Website
+8. Access the Website
 
    Once the server starts, open your web browser and go to:
 
