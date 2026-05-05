@@ -1,4 +1,4 @@
-# File-Management-and-Archiving-System
+# File Management and Archiving System
 A professional web-based application designed to manage, track, and organize inventory records. This system features a powerful Python (Django) backend, automated PDF report generation and dashboard data visualization.
 
 # Tech Stack
