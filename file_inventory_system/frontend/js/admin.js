@@ -186,7 +186,6 @@ if(!from || !to){
 
     }
 
-    // ================= NORMAL MODE =================
     else{
 
         const station = document.getElementById("filterStation").value.toLowerCase().trim();
