@@ -1,0 +1,776 @@
+
+/* ================= GLOBAL DARK BASE ================= */
+body.dark-mode {
+    background: #0b1220;
+    color: #e2e8f0;
+}
+
+/* ================= SECTION (REPORT GENERATOR) ================= */
+body.dark-mode section {
+    background: #0f172a !important;
+    border: 1px solid #1e293b;
+}
+
+/* ================= LABELS ================= */
+body.dark-mode label {
+    color: #94a3b8;
+}
+
+/* ================= BUTTON GROUP (YEARLY / QUARTERLY / TYPE) ================= */
+body.dark-mode .bg-surface-container-high {
+    background: #1e293b !important;
+}
+
+body.dark-mode .bg-white {
+    background: #3b82f6 !important;   /* active */
+    color: #ffffff !important;
+}
+
+/* inactive buttons */
+body.dark-mode button:not(.bg-white) {
+    color: #94a3b8;
+}
+
+/* hover */
+body.dark-mode button:hover {
+    background: #334155;
+}
+
+/* ================= SELECT / INPUT ================= */
+body.dark-mode select,
+body.dark-mode input {
+    background: #020617 !important;
+    color: #e2e8f0 !important;
+    border: 1px solid #334155 !important;
+}
+
+body.dark-mode select:focus,
+body.dark-mode input:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 1px #3b82f6 !important;
+}
+
+/* ================= GENERATE BUTTON ================= */
+body.dark-mode button[type="submit"] {
+    background: #2563eb !important;
+    color: #fff;
+}
+
+body.dark-mode button[type="submit"]:hover {
+    background: #1d4ed8 !important;
+}
+
+/* ================= CARD / CHART CONTAINER ================= */
+body.dark-mode .bg-surface-container-lowest {
+    background: #020617 !important;
+}
+
+body.dark-mode .bg-surface-container-low {
+    background: #0f172a !important;
+}
+
+/* ================= CHART GRID LINES ================= */
+body.dark-mode .border-surface-container-high {
+    border-color: #1e293b !important;
+}
+
+/* ================= DROPDOWN (CHART SELECTORS) ================= */
+body.dark-mode select {
+    background-color: #020617 !important;
+}
+
+/* ================= TABLE ================= */
+body.dark-mode table {
+    color: #e2e8f0;
+}
+
+/* header */
+body.dark-mode thead tr {
+    background: #1e293b !important;
+}
+
+/* rows */
+body.dark-mode tbody tr {
+    background: #020617 !important;
+}
+
+/* hover */
+body.dark-mode tbody tr:hover {
+    background: #1e293b !important;
+}
+
+/* borders */
+body.dark-mode td,
+body.dark-mode th {
+    border-color: #334155 !important;
+}
+
+/* ================= BADGES ================= */
+body.dark-mode .bg-green-50 {
+    background: #22c55e !important;
+    color: #000 !important;
+}
+
+body.dark-mode .bg-red-50 {
+    background: #ef4444 !important;
+    color: #fff !important;
+}
+
+body.dark-mode .bg-primary-fixed {
+    background: #3b82f6 !important;
+    color: #fff !important;
+}
+
+/* ================= TOOLTIP ================= */
+body.dark-mode #barTooltip {
+    background: #1e293b;
+    color: #e2e8f0;
+}
+
+/* ================= SCROLLBAR ================= */
+body.dark-mode ::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 6px;
+}
+
+/* ================= TRANSITIONS (SMOOTH SWITCH) ================= */
+section,
+button,
+select,
+input,
+table {
+    transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+
+/* ================= FIX: TEXT VISIBILITY ================= */
+body.dark-mode {
+    color: #e2e8f0 !important;
+}
+
+/* labels / small text */
+body.dark-mode .text-on-surface-variant {
+    color: #94a3b8 !important;
+}
+
+/* headings */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #f1f5f9 !important;
+}
+
+
+/* ================= FIX: ACTION ICON (MAIN ISSUE) ================= */
+body.dark-mode .material-symbols-outlined {
+    color: #60a5fa !important;   /* brighter blue */
+}
+
+/* hover effect */
+body.dark-mode a:hover .material-symbols-outlined,
+body.dark-mode button:hover .material-symbols-outlined {
+    color: #93c5fd !important;
+}
+
+
+/* ================= FIX: ACTION BUTTON VISIBILITY ================= */
+body.dark-mode .group-hover\:opacity-100 {
+    opacity: 1 !important; /* force visible */
+}
+
+
+/* ================= FIX: TABLE TEXT ================= */
+body.dark-mode tbody td {
+    color: #e2e8f0 !important;
+}
+
+/* process ID stronger */
+body.dark-mode tbody td:first-child {
+    color: #f8fafc !important;
+    font-weight: 600;
+}
+
+
+/* ================= FIX: BADGES (STATUS) ================= */
+body.dark-mode .bg-green-50 {
+    background: #22c55e !important;
+    color: #022c22 !important;
+}
+
+body.dark-mode .bg-red-50 {
+    background: #ef4444 !important;
+    color: #fff !important;
+}
+
+body.dark-mode .bg-primary-fixed {
+    background: #3b82f6 !important;
+    color: #fff !important;
+}
+
+
+/* ================= FIX: BUTTON COLORS ================= */
+body.dark-mode .bg-primary {
+    background: #3b82f6 !important;
+}
+
+body.dark-mode .bg-primary:hover {
+    background: #2563eb !important;
+}
+
+
+/* ================= FIX: BLUE CARD (RIGHT PANEL TOO DARK) ================= */
+body.dark-mode .bg-\[\#1A4B9B\] {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb) !important;
+}
+
+
+/* ================= FIX: CHART AREA ================= */
+body.dark-mode #barChart {
+    background: #020617;
+}
+
+
+/* ================= FIX: DROPDOWN TEXT ================= */
+body.dark-mode select {
+    color: #e2e8f0 !important;
+}
+
+
+/* ================= FIX: ACTION COLUMN SPACING ================= */
+body.dark-mode td:last-child {
+    min-width: 80px;
+}
+
+
+/* ================= OPTIONAL: MAKE ICON ALWAYS VISIBLE ================= */
+/* remove fade behavior */
+body.dark-mode .group-hover\:opacity-100,
+body.dark-mode .opacity-0 {
+    opacity: 1 !important;
+}
+
+
+
+    /* HEADER */
+
+.header{
+background:#1e4fa1;
+color:white;
+padding:14px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.header-title{
+font-weight:600;
+}
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body { font-family: 'Manrope', sans-serif; }
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+    }
+    .chart-bar {
+      transition: height 0.3s ease;
+    }
+
+/* HEADER */
+
+.header{
+background:#1e4fa1;
+color:white;
+padding:14px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.header-title{
+font-weight:600;
+}
+
+/* ================= WRAPPER ================= */
+.year-wrapper {
+    position: relative;
+}
+
+/* ================= DROPDOWN ================= */
+.year-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    max-height: 160px;
+    overflow-y: auto;
+
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+
+    margin-top: 4px; /* spacing from input */
+}
+
+/* ================= LIGHT MODE ================= */
+.year-dropdown {
+    background: #ffffff;
+    border: 1px solid #ced4da;
+}
+
+.year-option {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #212529;
+    transition: 0.15s;
+}
+
+.year-option:hover {
+    background: #f1f5f9;
+}
+
+/* ================= DARK MODE (FIXED STYLE) ================= */
+body.dark-mode .year-dropdown {
+    background: #020617;              /* match your system */
+    border: 1px solid #1e293b;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .year-option {
+    color: #e2e8f0;
+}
+
+body.dark-mode .year-option:hover {
+    background: #1e293b;              /* consistent hover */
+}
+
+/* ================= SCROLLBAR ================= */
+.year-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.year-dropdown::-webkit-scrollbar-thumb {
+    background: #cbd5f5;
+    border-radius: 4px;
+}
+
+body.dark-mode .year-dropdown::-webkit-scrollbar-thumb {
+    background: #334155;
+}
+
+/* ================= TABLE ROW FIX (MAIN PROBLEM) ================= */
+body.dark-mode .table tbody tr {
+    background-color: #020617 !important;
+    color: #e2e8f0 !important;
+}
+
+body.dark-mode .table tbody tr:nth-child(even) {
+    background-color: #020617 !important;
+}
+
+/* REMOVE WHITE CELLS */
+body.dark-mode .table td,
+body.dark-mode .table th {
+    background-color: transparent !important;
+    color: #e2e8f0 !important;
+}
+
+/* ================= FILE INPUT FIX ================= */
+body.dark-mode input[type="file"] {
+    background-color: #020617 !important;
+    color: #e2e8f0 !important;
+    border: 1px solid #334155 !important;
+}
+
+/* file button (Choose Files) */
+body.dark-mode input[type="file"]::file-selector-button {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ================= TABLE HEADER CLEAN ================= */
+body.dark-mode .table thead th {
+    background-color: #1e293b !important;
+    color: #f1f5f9 !important;
+}
+
+/* ================= BADGES (STATUS COLORS FIX) ================= */
+body.dark-mode .badge.bg-warning {
+    background-color: #facc15 !important;
+    color: #000 !important;
+}
+
+body.dark-mode .badge.bg-success {
+    background-color: #22c55e !important;
+}
+
+body.dark-mode .badge.bg-danger {
+    background-color: #ef4444 !important;
+}
+
+body.dark-mode .badge.bg-info {
+    background-color: #0ea5e9 !important;
+}
+
+/* ================= MODAL HEADER (cleaner look) ================= */
+body.dark-mode .modal-header {
+    background-color: #0f172a !important;
+}
+
+/* ================= REMOVE LIGHT STRIP AT BOTTOM ================= */
+body.dark-mode .table-responsive {
+    background-color: #020617 !important;
+}
+
+/* ================= MODAL DARK MODE ================= */
+body.dark-mode .modal-content {
+    background-color: #0f172a !important;
+    color: #e2e8f0 !important;
+    border: 1px solid #1e293b !important;
+}
+
+body.dark-mode .modal-header {
+    border-bottom: 1px solid #1e293b !important;
+}
+
+body.dark-mode .modal-footer {
+    border-top: 1px solid #1e293b !important;
+}
+
+/* CLOSE BUTTON */
+body.dark-mode .btn-close {
+    filter: invert(1);
+}
+
+/* ================= TABLE ================= */
+body.dark-mode .table {
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+}
+
+body.dark-mode .table-bordered th,
+body.dark-mode .table-bordered td {
+    border-color: #334155 !important;
+}
+
+/* TABLE HEAD (ALL TYPES) */
+body.dark-mode .table thead,
+body.dark-mode .table-dark,
+body.dark-mode .table-light {
+    background-color: #1e293b !important;
+    color: #f1f5f9 !important;
+}
+
+body.dark-mode .table thead th {
+    background-color: #1e293b !important;
+}
+
+/* HOVER */
+body.dark-mode .table-hover tbody tr:hover {
+    background-color: #1e293b !important;
+}
+
+/* ================= EMPTY STATE ================= */
+body.dark-mode .text-muted {
+    color: #94a3b8 !important;
+}
+
+/* ================= SCROLL AREA ================= */
+body.dark-mode .table-responsive {
+    background-color: #020617 !important;
+}
+
+/* ================= PREVIEW FOOTER (FIX WHITE) ================= */
+body.dark-mode #modalFooter {
+    background-color: #020617 !important;
+    border-top: 1px solid #1e293b !important;
+    color: #e2e8f0 !important;
+}
+
+/* ================= INPUTS INSIDE MODALS ================= */
+body.dark-mode .modal input,
+body.dark-mode .modal select,
+body.dark-mode .modal textarea {
+    background-color: #020617 !important;
+    color: #e2e8f0 !important;
+    border: 1px solid #334155 !important;
+}
+
+/* ================= BUTTONS ================= */
+body.dark-mode .btn-secondary {
+    background-color: #334155 !important;
+    border: none !important;
+}
+
+body.dark-mode .btn-danger {
+    background-color: #ef4444 !important;
+}
+
+body.dark-mode .btn-success {
+    background-color: #22c55e !important;
+}
+
+/* ================= MODAL BODY ================= */
+body.dark-mode .modal-body {
+    background-color: transparent !important;
+}
+
+
+
+
+/* ================= MODE LABEL ================= */
+.mode-label {
+    font-size: 13px;
+    color: #64748b;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    /* ?? FIX WHITE HIGHLIGHT */
+    background: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    /* optional spacing */
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+/* remove click/focus flash */
+.mode-label:focus,
+.mode-label:active {
+    background: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* ================= ACTIVE STATE ================= */
+.mode-label.active {
+    color: #3b82f6;
+    font-weight: 600;
+
+    /* ?? MODERN PILL STYLE */
+    background: rgba(59, 130, 246, 0.15);
+}
+
+/* ================= DARK MODE ================= */
+body.dark-mode .mode-label {
+    color: #94a3b8;
+}
+
+body.dark-mode .mode-label.active {
+    color: #60a5fa;
+
+    /* adjusted for dark background */
+    background: rgba(96, 165, 250, 0.15);
+}
+
+
+
+/* ================= SWITCH DARK MODE ================= */
+body.dark-mode .form-check-input {
+    background-color: #1e293b;
+    border: 1px solid #475569;
+    cursor: pointer;
+}
+
+body.dark-mode .form-check-input:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+body.dark-mode .form-check-input:focus {
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.4);
+}
+/* ================= DARK MODE INPUT FIX ================= */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #0f172a !important;
+    color: #e2e8f0 !important;
+    border: 1px solid #334155 !important;
+}
+
+/* Placeholder text */
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #64748b !important;
+}
+
+/* Focus state */
+body.dark-mode input:focus,
+body.dark-mode select:focus,
+body.dark-mode textarea:focus {
+    background-color: #020617 !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 1px #3b82f6 !important;
+}
+
+/* Disabled inputs */
+body.dark-mode input:disabled {
+    background-color: #1e293b !important;
+    color: #64748b !important;
+}
+/* ================= DARK MODE SWEETALERT ================= */
+body.dark-mode .swal2-popup {
+    background: #0f172a !important;
+    color: #e2e8f0 !important;
+}
+
+body.dark-mode .swal2-title {
+    color: #f1f5f9 !important;
+}
+
+body.dark-mode .swal2-html-container {
+    color: #cbd5f5 !important;
+}
+
+body.dark-mode .swal2-confirm {
+    background-color: #3b82f6 !important;
+    border: none !important;
+}
+
+body.dark-mode .swal2-cancel {
+    background-color: #475569 !important;
+    color: #fff !important;
+}
+
+body.dark-mode .swal2-icon {
+    border-color: currentColor !important;
+}
+
+/* TABLES INSIDE ALERT */
+body.dark-mode .swal2-popup table {
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+}
+
+body.dark-mode .swal2-popup th,
+body.dark-mode .swal2-popup td {
+    border-color: #334155 !important;
+}
+/* ================= DARK MODE ================= */
+body.dark-mode{
+    background:#0b1220;
+    color:#e2e8f0;
+}
+
+/* HEADER */
+body.dark-mode .header{
+    background:#020617;
+    border-bottom:1px solid #1e293b;
+}
+
+/* LEFT PANEL */
+body.dark-mode .panel-card{
+    background:#0f172a;
+    border:1px solid #1e293b;
+}
+
+/* FILTER CARD */
+body.dark-mode .filter-card{
+    background:#0f172a;
+    border:1px solid #1e293b;
+}
+
+/* FILE CARDS */
+body.dark-mode .file-card{
+    background:#0f172a;
+    border:1px solid #1e293b;
+}
+
+body.dark-mode .file-card:hover{
+    background:#1e293b;
+}
+
+/* INPUTS */
+body.dark-mode input,
+body.dark-mode select{
+    background:#020617;
+    color:#e2e8f0;
+    border:1px solid #334155;
+}
+
+body.dark-mode input:focus,
+body.dark-mode select:focus{
+    border-color:#3b82f6;
+    box-shadow:0 0 0 1px #3b82f6;
+}
+
+/* BUTTONS */
+body.dark-mode .btn-primary{
+    background:#2563eb;
+    border:none;
+}
+
+body.dark-mode .btn-secondary{
+    background:#334155;
+    border:none;
+    color:#e2e8f0;
+}
+
+body.dark-mode .btn-secondary:hover{
+    background:#475569;
+}
+
+/* NAV TABS */
+body.dark-mode .nav-tabs .nav-link{
+    color:#94a3b8;
+    background:transparent;
+    border:none;
+}
+
+body.dark-mode .nav-tabs .nav-link.active{
+    color:#fff;
+    border-bottom:2px solid #3b82f6;
+    background:transparent;
+}
+
+/* DROPDOWN */
+body.dark-mode .dropdown-box{
+    background:#0f172a;
+    border:1px solid #1e293b;
+}
+
+body.dark-mode .dropdown-item:hover{
+    background:#1e293b;
+}
+
+/* TEXT */
+body.dark-mode .text-muted{
+    color:#94a3b8 !important;
+}
+
+/* EMPTY STATE */
+body.dark-mode .empty-state{
+    background:#0f172a;
+    border:1px dashed #334155;
+}
+
+/* TOOLTIP */
+body.dark-mode .tooltip-box{
+    background:#0f172a;
+    color:#e2e8f0;
+    border:1px solid #1e293b;
+}
+
+/* SCROLLBAR (optional but nice) */
+body.dark-mode ::-webkit-scrollbar{
+    width:8px;
+}
+body.dark-mode ::-webkit-scrollbar-thumb{
+    background:#334155;
+    border-radius:6px;
+}

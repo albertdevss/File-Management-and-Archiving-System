@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>File Management & Archiving System</title>
+    
+    <link rel="icon" type="image/png" href="/image/logo.png">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/frontend/css/cross_check.css">
+
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <div class="header-title">
+        File Management &amp; Archiving System  v1.02
+    </div>
+
+    <div class="d-flex align-items-center gap-3">
+
+        <span id="clock"></span>
+
+        <button class="btn btn-sm btn-outline-light" onclick="handleBack()">
+            <i class="bi bi-arrow-left"></i> Return to Main Page
+        </button>
+<button class="btn btn-sm btn-outline-light" id="darkToggle">       a <i class="bi bi-moon-fill"></i>
+    </button>
+    </div>
+
+</div>
+
+<div class="container">
+
+<div class="main-layout">
+
+    <!-- LEFT -->
+    <div class="card pdf-panel">
+        <div id="meta" class="meta-grid"></div>
+        <div id="preview"></div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="card image-panel">
+
+        <!-- HEADER -->
+        <div class="image-header" id="gridHeader">
+            <div class="header-left">
+                <h3>Related Rainfall Charts</h3>
+                <span class="total-count">
+                    {% if related_files %}
+                        {{ related_files|length }} charts
+                    {% else %}
+                        No charts available
+                    {% endif %}
+                </span>
+            </div>
+        </div>
+
+        <!-- GRID VIEW -->
+        <div id="imageGridView">
+
+            {% if related_files %}
+
+                <div class="grid">
+                    {% for file in related_files %}
+                        <div class="item"
+                             onclick="showPreview('{{ file.file.url }}', '{{ file.date }}')">
+
+                            <img src="{{ file.file.url }}" class="thumb">
+
+                            <div class="item-info">
+                                <strong>{{ file.date }}</strong>
+                            </div>
+
+                        </div>
+                    {% endfor %}
+                </div>
+
+            {% else %}
+
+                <!-- EMPTY STATE -->
+                <div class="empty-rainfall">
+                    <i class="bi bi-image"></i>
+                    <h6>No Rainfall Charts</h6>
+                    <p>No related rainfall charts available for this record.</p>
+                </div>
+
+            {% endif %}
+
+        </div>
+
+<div id="imagePreviewView" style="display:none;">
+
+    <div class="preview-header image-header">
+        <button class="back-btn" onclick="backToGrid()">
+            <i class="bi bi-arrow-left"></i> Back
+        </button>
+    </div>
+
+    <div class="zoom-instruction">
+        Scroll to zoom | Click and drag to move left and right.
+    </div>
+
+    <div class="zoom-container" id="zoomContainer">
+        <img id="zoomImage">
+    </div>
+
+    <!-- META -->
+    <div id="imageMeta" class="image-meta"></div>
+
+</div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+<footer class="app-footer">
+<div class="footer-left">
+&copy; 2026 HMD-HMDAS. All rights reserved.
+</div>
+
+<div class="footer-center">
+"Building ideas into reality."
+</div>
+
+<div class="footer-right">
+<span>Internship System</span>
+</div>
+</footer>
+<script src="/frontend/js/cross_check.js"></script> 
+</body>
+</html>

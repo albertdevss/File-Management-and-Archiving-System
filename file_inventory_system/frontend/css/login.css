@@ -1,0 +1,242 @@
+.custom-modal {
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.modal-content {
+    max-width: 420px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.topbar-right{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* ================= DARK MODE ================= */
+body.dark-mode {
+    background: #020617;
+    color: #e2e8f0;
+}
+
+/* TOPBAR */
+body.dark-mode .topbar {
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* LOGIN CARD */
+body.dark-mode .login-card {
+    background: #020617;
+    border: 1px solid #1e293b;
+    box-shadow: none;
+}
+
+/* LOGO + TEXT */
+body.dark-mode .logo {
+    color: #60a5fa;
+}
+
+body.dark-mode .subtitle {
+    color: #94a3b8;
+}
+
+/* INPUTS */
+body.dark-mode .form-control {
+    background: #020617;
+    border: 1px solid #1e293b;
+    color: #e2e8f0;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #64748b;
+}
+
+body.dark-mode .form-control:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 0.15rem rgba(59,130,246,0.25);
+}
+
+/* INPUT GROUP ICON BG */
+body.dark-mode .input-group-text {
+    background: #020617;
+    border: 1px solid #1e293b;
+    color: #94a3b8;
+}
+
+/* LOGIN BUTTON */
+body.dark-mode .btn-login {
+    background: #1e40af;
+}
+
+body.dark-mode .btn-login:hover {
+    background: #1d4ed8;
+}
+
+/* ALERT */
+body.dark-mode .alert {
+    background: #7f1d1d;
+    color: #fecaca;
+    border: none;
+}
+
+/* SCROLLBAR */
+body.dark-mode ::-webkit-scrollbar {
+    width: 8px;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 6px;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+
+
+body{
+    background:#f4f6f9;
+    font-family: 'Manrope', sans-serif;
+    margin:0;
+}
+
+.topbar {
+background:#1e4fa1;
+color:white;
+padding:14px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.topbar-title {
+    font-weight: 600;
+}
+
+#clock {
+    white-space: nowrap;
+}
+
+        .login-wrapper {
+            height: calc(100vh - 50px);
+        }
+        .login-card {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 10px;
+            background: white;
+            border: 1px solid #dcdfe6;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            color: #2f5aa6;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 13px;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+
+        .form-control {
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .form-control:focus {
+            border-color: #2f5aa6;
+            box-shadow: 0 0 0 0.15rem rgba(47,90,166,0.2);
+        }
+
+        .input-group-text {
+            background: #f1f3f5;
+        }
+        .btn-login {
+            background: #2f5aa6;
+            border: none;
+            font-size: 14px;
+        }
+
+        .btn-login:hover {
+            background: #244a8c;
+        }
+        .alert {
+            font-size: 13px;
+        }
+
+
+/* FOOTER */
+.app-footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:10px 20px;
+    background:#fff;
+    border-top:1px solid #e5e7eb;
+    font-size:13px;
+
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    align-items:center;
+}
+
+.footer-left{
+    color:#111827; /* darker */
+    font-weight:500;
+}
+
+.footer-center{
+    text-align:center;
+    color:#374151; /* stronger */
+    font-style:italic;
+}
+
+.footer-right{
+    text-align:right;
+    font-size:12px;
+    color:#6b7280; /* balanced */
+}
+
+/* DARK MODE */
+
+body.dark-mode .app-footer{
+    background:#020617;
+    border-top:1px solid #1e293b;
+}
+
+body.dark-mode .footer-left{
+    color:#e2e8f0;
+}
+
+body.dark-mode .footer-center{
+    color:#cbd5f5;
+}
+
+body.dark-mode .footer-right{
+    color:#94a3b8;
+}
+
+body.dark-mode .member:hover{
+    background:#1e293b;
+}
+
+body.dark-mode .meta .link{
+    color:#60a5fa;
+}
